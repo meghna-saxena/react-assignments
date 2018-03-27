@@ -6,7 +6,7 @@ const validation = (props) => {
     //handling conditions by JS if statements
     let validationMessage = 'Text long enough!';
 
-    if (props.validationMessage <= 5) {
+    if (props.inputLength <= 5) {
         validationMessage = 'Text too short';
     }
     return (

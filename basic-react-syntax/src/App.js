@@ -32,10 +32,12 @@ class App extends Component {
         currentName={this.state.username} />
         <UserOutput userName={this.state.username} />
         <UserOutput userName={this.state.username} />
-        <UserOutput userName="Max"/>
-      </div>
+        <UserOutput userName='Raj'/>
+      </div>  
     );
   }
 }
 
 export default App;
+
+

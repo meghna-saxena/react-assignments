@@ -6,8 +6,10 @@ const UserOutput = (props) => {
         <div className="UserOutput">
             <p>Username: {props.userName}</p>
             <p>Hello, good day!</p>
+            <p>I love you! &hearts;</p>
         </div>
     );
 };
 
 export default UserOutput;
+
