@@ -7,12 +7,17 @@ import Jumbotron from './components/Jumbotron';
 import Page from './components/Page';
 
 class App extends Component {
+  // getDefaultProps() {
+  //   return {
+  //     brand: "DefaultBrand"
+  //   }
+  // }
   render() {
     return (
       <div className="App">
-        <NavBar brand="ReactStrap" />
+        <NavBar currentPage="home" brand="ReactStrap" />
         <Jumbotron heading="Hello world" text="This is a Bootstrap theme that uses React.js components" />
-        <Page />
+        <Page currentPage="home" />
       </div>
     );
   }
