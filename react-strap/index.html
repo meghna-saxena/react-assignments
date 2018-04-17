@@ -18,17 +18,31 @@ It slowly compiles JSX with Babel in the browser and uses a large development bu
 <body>
   <div id="root"></div>
   <script type="text/babel">
-      const Theme = () => {
-        return <div><h1>Theme Component</h1></div>
+      const NavBar = () => {
+        return <nav className="navbar navbar-default">
+        <div className="container">
+        <h1>Navbar Component</h1>
+        </div>
+        </nav>
       }
-      //can also be written as 
-      // var Theme = React.createClass({
-      //   render() {
-      //   return(
-      //       <div><h1>Theme Component</h1></div>
-      //     );
-      //   }
-      // });
+
+      const Jumbotron = () => {
+        return <div><h1>Jumbotron Component</h1></div>
+      }
+
+      const Page = () => {
+        return <div><h1>Page Component</h1></div>
+      }
+
+      const Theme = () => {
+        return (
+          <div>
+          <NavBar />
+          <Jumbotron />
+          <Page />
+          </div>
+        );
+      };
 
       ReactDOM.render(
         <div>
